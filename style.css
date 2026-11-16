@@ -88,3 +88,68 @@ It also skips the small headings and journey length paragraphs so body paragraph
     margin-top: 25px;
 }
 
+/* Main image and outer border display and scene display */
+.image-container {
+    height: 470px;
+    position: relative;
+    background-color: #213c48;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Ensures that the image fills the container and maintains its aspect ratio. Styles actual image elements in the container. */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text displayed at the bottom of the main image */
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 55px 35px 28px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+
+#scene-number {
+    color: #f2bc83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#scene-title {
+    font-size: 44px;
+    margin: 0;
+}
+
+#scene-description {
+    margin: 4px 0 0;
+}
+
+/* Audio player section */
+.player {
+    background-color: #14313e;
+    padding: 25px 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+.player h2 {
+    font-size: 29px;
+    margin: 0;
+}
+
+.player > p, .chapters > p:not(.small-heading) {
+    color: #b7cbd1;
+    margin-top: 4px;
+}
+
+.player-controls, .volume-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
