@@ -1,0 +1,50 @@
+/* CCT360 Lab 5 - Mumbai, in Motion */
+/* CSS for the Mumbai Soundscape Webpage */
+
+/* General styling for the webpage */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0b202b;
+    color: #f5f5f0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and footer styling */
+header, footer {
+    background-color: #081821;
+}
+
+.header-content, main, footer {
+    max-width: 1150px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    color: #f1b979;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span, .course {
+    color: #a9bdc6;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
