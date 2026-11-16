@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai, in Motion | CCT360 Lab 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <p class="logo">MUMBAI <span>/ A SOUND JOURNAL</span></p>
+            <p class="course">CCT360 · DESIGN WITH SOUND &amp; VISION</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <p class="small-heading">A CITY YOU CAN HEAR</p>
+            <h1>Mumbai, <em>in motion.</em></h1>
+            <p>Experience my hometown through four sounds: morning traffic, a local train,
+               monsoon rain, and the waves along Marine Drive.</p>
+            <p class="journey-length">4 SCENES &nbsp; | &nbsp; 76 SECONDS &nbsp; | &nbsp; MUMBAI, INDIA</p>
+        </section>
+
+        <section class="soundscape-section" aria-label="Interactive Mumbai City soundscape">
+            <div class="image-container">
+                <img id="scene-image" src="images/mumbai-streets.jpg"
+                     alt="A busy Mumbai intersection near Chhatrapati Shivaji Maharaj Terminus with traffic.">
+                <div class="image-caption">
+                    <p id="scene-number">CHAPTER 01 / 04</p>
+                    <h2 id="scene-title">The city wakes</h2>
+                    <p id="scene-description">Morning traffic and car horns bring the city streets to life.</p>
+                </div>
+            </div>
+
+            <div class="player">
+                <h2>Listen to Mumbai</h2>
+                <p>Press Play or choose a scene below to begin.</p>
+
+                <!-- One audio file contains all four scenes. -->
+                <audio id="soundscape" preload="metadata">
+                    <source src="audio/Mumbai_Final_Soundscape.mp3" type="audio/mpeg">
+                    <!-- Fallback message if required: --> 
+                    Your browser does not support HTML5 audio and this format. 
+                </audio>
+
+                <div class="player-controls">
+                    <button id="play-button" type="button">Play</button>
+                    <button id="restart-button" type="button">Restart</button>
+                    <label for="seek-bar">Progress</label>
+                    <input id="seek-bar" type="range" min="0" max="76" value="0" step="0.1">
+                    <span id="time-display">0:00 / 1:16</span>
+                </div>
+
+                <div class="volume-controls">
+                    <label for="volume-bar">Volume</label>
+                    <input id="volume-bar" type="range" min="0" max="1" step="0.1" value="0.8">
+                    <span id="volume-text">80%</span>
+                    <p id="player-status" role="status">Ready to listen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapters">
+            <p class="small-heading">FOUR MOMENTS, ONE CITY</p>
+            <h2>Choose a scene</h2>
+            <p>Each scene starts at a different point in the same audio recording.</p>
+
+            <div class="chapter-grid">
+                <button class="chapter-button active" type="button">
+                    <img src="images/mumbai-streets.jpg" alt="A busy Mumbai intersection near Chhatrapati Shivaji Maharaj Terminus with traffic.">
+                    <span class="chapter-time">01 · 0:00</span>
+                    <strong>The city wakes</strong>
+                    <span>Traffic and horns</span>
+                </button>
+
+                <button class="chapter-button" type="button">
+                    <img src="images/mumbai-local-train.jpg" alt="Mumbai local train in the early morning.">
+                    <span class="chapter-time">02 · 0:19</span>
+                    <strong>The daily commute</strong>
+                    <span>Mumbai local train</span>
+                </button>
+
+                <button class="chapter-button" type="button">
+                    <img src="images/mumbai-monsoon.jpg" alt="Mumbai during the monsoon season at the Gateway of India.">
+                    <span class="chapter-time">03 · 0:38</span>
+                    <strong>The monsoon arrives</strong>
+                    <span>Rain and city ambience</span>
+                </button>
+
+                <button class="chapter-button" type="button">
+                    <img src="images/mumbai-marine-drive.jpg" alt="Scenic view of Marine Drive and waves along the Mumbai coastline.">
+                    <span class="chapter-time">04 · 0:57</span>
+                    <strong>A quieter coastline</strong>
+                    <span>Marine Drive and waves</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>The sounds of home</h2>
+            <p>Mumbai is always moving. I wanted to show the contrast between its busy streets and train stations, 
+            its rainy season, and the calmer feeling of standing beside the Arabian Sea at Marine Drive, 
+            also known as the Queen's Necklace. The sounds change as the images tell the story of a day in the city.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>MUMBAI, IN MOTION · CCT360 LAB 5</p>
+        <p>Created by Madhav Chandgothia</p>
+    </footer>
+
+</body>
+</html>
+          
