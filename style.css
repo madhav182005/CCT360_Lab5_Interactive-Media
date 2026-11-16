@@ -48,3 +48,43 @@ header, footer {
     letter-spacing: 1px;
 }
 
+/* Introduction section */
+.introduction {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+.small-heading, .journey-length {
+    color: #efb578;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 10px 0 15px;
+}
+
+h1 em {
+    color: #efb578;
+}
+
+/* Styling for paragraphs in the introduction section. 
+This targets direct children of an element with the class and ignores other paragraphs in other containers. 
+It also skips the small headings and journey length paragraphs so body paragraphs are styled consistently. */
+.introduction > p:not(.small-heading):not(.journey-length) {
+    color: #c4d2d5;
+    max-width: 680px;
+}
+
+.journey-length {
+    margin-top: 25px;
+}
+
