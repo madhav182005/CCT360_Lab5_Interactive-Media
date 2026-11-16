@@ -174,11 +174,6 @@ button, input {
     color: white;
 }
 
-#restart-button {
-    background-color: #35505d;
-    color: white;
-}
-
 .player-controls button:hover {
     background-color: #e4a867;
     color: #10252f;
